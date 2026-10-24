@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Fill-in résumé template (pivot-story style, for career changers). The sample text is fictitious — replace it with your own, then rebuild.">
+  <title>Résumé — {{full_name}}</title>
+  <link rel="stylesheet" href="pivot-story.css">
+</head>
+<body>
+  <header class="masthead">
+    <h1>{{full_name}}</h1>
+    <p class="tagline">{{target_title}}</p>
+    <p class="contact">
+      <span>{{location}}</span><span>{{phone}}</span><span>{{email}}</span><span>{{website}}</span><span>{{linkedin}}</span>
+    </p>
+  </header>
+
+  <section class="story">
+    <h2>Summary</h2>
+    <p>{{summary}}</p>
+  </section>
+
+  <section>
+    <h2>What I bring with me</h2>
+    <ul class="map-list">
+      <li><span class="from">{{map1_from}}</span><span class="arrow">&rarr;</span><span class="to">{{map1_to}}</span></li>
+      <li><span class="from">{{map2_from}}</span><span class="arrow">&rarr;</span><span class="to">{{map2_to}}</span></li>
+      <li><span class="from">{{map3_from}}</span><span class="arrow">&rarr;</span><span class="to">{{map3_to}}</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Work Experience</h2>
+    <article class="entry">
+      <p class="row"><span class="role">{{job1_title}}</span><span class="date">{{job1_dates}}</span></p>
+      <p class="org">{{job1_org}}</p>
+      <ul class="bullets">{{job1_bullets}}</ul>
+    </article>
+    <article class="entry">
+      <p class="row"><span class="role">{{job2_title}}</span><span class="date">{{job2_dates}}</span></p>
+      <p class="org">{{job2_org}}</p>
+      <ul class="bullets">{{job2_bullets}}</ul>
+    </article>
+    <article class="entry">
+      <p class="row"><span class="role">{{job3_title}}</span><span class="date">{{job3_dates}}</span></p>
+      <p class="org">{{job3_org}}</p>
+      <ul class="bullets">{{job3_bullets}}</ul>
+    </article>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <article class="entry">
+      <p class="row"><span class="role">{{edu1_degree}}</span><span class="date">{{edu1_dates}}</span></p>
+      <p class="org">{{edu1_school}}</p>
+    </article>
+    <article class="entry">
+      <p class="row"><span class="role">{{edu2_degree}}</span><span class="date">{{edu2_dates}}</span></p>
+      <p class="org">{{edu2_school}}</p>
+    </article>
+  </section>
+
+  <section>
+    <h2>Extra credit</h2>
+    <ul class="bullets">{{extras_bullets}}</ul>
+  </section>
+</body>
+</html>

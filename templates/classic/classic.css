@@ -1,0 +1,123 @@
+/*
+Classic — quiet, conservative, serif. Lets the words carry the weight.
+Shares one stylesheet with all three documents in this style
+(base styles plus the .letter and .refs page overrides).
+*/
+
+@page { size: letter; margin: 0.6in 0.8in; }
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: Georgia, "Times New Roman", "Noto Serif", "DejaVu Serif", serif;
+  font-size: 10.5pt;
+  line-height: 1.36;
+  color: #1b1b1b;
+  margin: 0;
+}
+
+/* -------- shared header -------- */
+
+.masthead { text-align: center; }
+.masthead h1 {
+  margin: 0;
+  font-size: 18pt;
+  font-weight: bold;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.masthead .tagline {
+  margin: 3pt 0 0;
+  font-size: 10.5pt;
+  color: #454545;
+  letter-spacing: 0.06em;
+}
+.masthead .contact {
+  margin: 5pt 0 0;
+  font-size: 9.5pt;
+  color: #333;
+}
+.masthead .contact span { white-space: nowrap; }
+.masthead .contact span + span::before { content: "  \00B7  "; color: #8a8a8a; }
+
+/* -------- shared section rhythm -------- */
+
+section { margin: 0; }
+
+h2 {
+  font-size: 10.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border-bottom: 0.8pt solid #909090;
+  padding-bottom: 2.5pt;
+  margin: 12pt 0 6.5pt;
+}
+
+article.entry { page-break-inside: avoid; margin-bottom: 8.5pt; }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.row .role { font-weight: bold; }
+.row .date { font-size: 9.5pt; color: #555; white-space: nowrap; }
+
+.org { font-style: italic; font-size: 10pt; margin: 1pt 0 3pt; }
+
+ul { margin: 2pt 0 0; padding-left: 13pt; }
+li { margin-bottom: 2pt; }
+
+.skill-label { font-weight: bold; }
+
+/* -------- cover letter (body class="letter") -------- */
+
+.letter .masthead {
+  border-bottom: 1pt solid #5a5a5a;
+  padding-bottom: 8pt;
+}
+.letter .masthead h1 { font-size: 15pt; }
+.letter .date-line { margin: 14pt 0 13pt; font-size: 10pt; }
+.letter p { margin: 0 0 8pt; }
+.letter .bullets { margin: 2pt 0 10pt; }
+.letter .signoff { margin: 15pt 0 0; }
+.letter .signoff-name { margin: 2pt 0 0; font-weight: bold; }
+.letter .enclosures {
+  margin: 14pt 0 0;
+  font-size: 9pt;
+  color: #555;
+  border-top: 0.5pt solid #b5b5b5;
+  padding-top: 6pt;
+}
+
+/* -------- reference sheet (body class="refs") -------- */
+
+.refs .masthead {
+  border-bottom: 1pt solid #5a5a5a;
+  padding-bottom: 8pt;
+}
+.refs h2 { margin-top: 10pt; }
+.refs .note {
+  font-style: italic;
+  font-size: 9.5pt;
+  color: #555;
+  margin: 0 0 10pt;
+}
+.ref-table { width: 100%; border-collapse: collapse; font-size: 10pt; }
+.ref-table th {
+  text-align: left;
+  font-size: 8.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 1pt solid #444;
+  padding: 3pt 8pt 3pt 0;
+  color: #333;
+}
+.ref-table td {
+  border-bottom: 0.5pt solid #c8c8c8;
+  padding: 8pt 8pt 8pt 0;
+  vertical-align: top;
+}
+.ref-table .first { width: 22%; }
+
+.letter .subject { margin: 12pt 0 10pt; font-weight: bold; }

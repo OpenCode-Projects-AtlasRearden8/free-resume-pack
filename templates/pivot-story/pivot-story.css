@@ -1,0 +1,136 @@
+/*
+Pivot-story — for career changers. Warm accents frame the story:
+who you were, what travels with you, where it shows up.
+Same ATS-safe bones: one column, real text, standard headings.
+*/
+
+@page { size: letter; margin: 0.6in 0.8in; }
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: "Avenir Next", "Segoe UI", "Noto Sans", "DejaVu Sans", sans-serif;
+  font-size: 10pt;
+  line-height: 1.42;
+  color: #2b2b2b;
+  margin: 0;
+}
+
+/* -------- shared header -------- */
+
+.masthead h1 {
+  margin: 0;
+  font-size: 20pt;
+  font-weight: 600;
+  color: #7a3f16;
+}
+.masthead .tagline {
+  margin: 3pt 0 0;
+  font-size: 10.5pt;
+  color: #6b635c;
+}
+.masthead .contact {
+  margin: 6pt 0 0;
+  font-size: 9.5pt;
+  color: #57514c;
+  border-bottom: 1.2pt solid #c8773f;
+  padding-bottom: 8pt;
+}
+.masthead .contact span { white-space: nowrap; }
+.masthead .contact span + span::before { content: "  \00B7  "; color: #c8773f; }
+
+/* -------- shared section rhythm -------- */
+
+section { margin: 0; }
+
+h2 {
+  font-size: 9.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: #96491a;
+  border-bottom: 0.6pt solid #e5d2c3;
+  padding-bottom: 2.5pt;
+  margin: 10.5pt 0 6pt;
+}
+
+article.entry { page-break-inside: avoid; margin-bottom: 8pt; }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.row .role { font-weight: 600; }
+.row .date { font-size: 9pt; color: #6b635c; white-space: nowrap; }
+
+.org { font-style: italic; font-size: 9.5pt; color: #6b635c; margin: 1pt 0 3pt; }
+
+ul { margin: 2pt 0 0; padding-left: 13pt; }
+li { margin-bottom: 1.8pt; }
+
+/* -------- pivot-specific: the story block -------- */
+
+.story {
+  background: #faf4ec;
+  border-left: 3pt solid #c8773f;
+  border-radius: 3pt;
+  padding: 7pt 12pt 8pt;
+  margin-top: 4pt;
+}
+.story h2 { margin-top: 0; border-bottom: 0.6pt solid #ddc4ab; }
+.story p { margin: 0; }
+
+/* -------- pivot-specific: the skills map -------- */
+
+.map-list { list-style: none; padding-left: 0; margin: 0; }
+.map-list li {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 3.5pt;
+}
+.map-list .from { flex: 0 0 42%; padding-right: 8pt; font-weight: 600; }
+.map-list .arrow { color: #c8773f; padding: 0 7pt; }
+.map-list .to { flex: 1 1 auto; }
+
+/* -------- cover letter (body class="letter") -------- */
+
+.letter .masthead .contact { border-bottom: 1pt solid #e5d2c3; }
+.letter .date-line { margin: 14pt 0 13pt; font-size: 9.5pt; color: #6b635c; }
+.letter p { margin: 0 0 8pt; }
+.letter .bullets { margin: 2pt 0 10pt; }
+.letter .signoff { margin: 15pt 0 0; }
+.letter .signoff-name { margin: 2pt 0 0; font-weight: 600; color: #7a3f16; }
+.letter .enclosures {
+  margin: 14pt 0 0;
+  font-size: 8.5pt;
+  color: #6b635c;
+  border-top: 0.5pt solid #e5d2c3;
+  padding-top: 6pt;
+}
+
+/* -------- reference sheet (body class="refs") -------- */
+
+.refs .note {
+  font-style: italic;
+  font-size: 9pt;
+  color: #6b635c;
+  margin: 0 0 10pt;
+}
+.ref-table { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
+.ref-table th {
+  text-align: left;
+  font-size: 8.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #96491a;
+  border-bottom: 1pt solid #c8773f;
+  padding: 3pt 8pt 3pt 0;
+}
+.ref-table td {
+  border-bottom: 0.5pt solid #e5d2c3;
+  padding: 8pt 8pt 8pt 0;
+  vertical-align: top;
+}
+.ref-table .first { width: 22%; }
+
+.letter .subject { margin: 12pt 0 10pt; font-weight: bold; }

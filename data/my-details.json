@@ -1,0 +1,95 @@
+{
+  "_sample_notice": "Everything below is SAMPLE text so you can see how the templates look. Replace each value with your own, then run: python3 build.py",
+
+  "full_name": "Avery Sample",
+  "target_title": "Program Coordinator",
+  "location": "Sampletown, IN",
+  "phone": "(555) 010-4567",
+  "email": "avery.sample@example.com",
+  "website": "averysample.example",
+  "linkedin": "linkedin.com/in/avery-sample",
+
+  "summary": "Organizer of people, schedules, and records. Four years coordinating community programs at a nonprofit, plus two at a busy front desk, with clear writing and calm follow-through.",
+
+  "skill1_label": "Everyday tools",
+  "skill1_text": "shared spreadsheets, calendar scheduling, email and phone triage, accurate record keeping",
+  "skill2_label": "Strengths",
+  "skill2_text": "plain-English writing, event logistics, building schedules people can keep",
+  "skill3_label": "Comfortable with",
+  "skill3_text": "training first-time volunteers, keeping meetings short and on time",
+
+  "job1_title": "Program Coordinator",
+  "job1_org": "Sampletown Housing Council",
+  "job1_dates": "2022 – Present",
+  "job1_bullets": [
+    "Coordinate a weekly volunteer schedule of 40 people across three sites.",
+    "Track intake applications in a shared log and report clean monthly numbers.",
+    "Wrote and maintain the four-page volunteer guide new helpers receive on day one."
+  ],
+
+  "job2_title": "Front Desk Associate",
+  "job2_org": "Example Family YMCA",
+  "job2_dates": "2019 – 2022",
+  "job2_bullets": [
+    "Welcomed more than 100 visitors a day and kept the desk line moving at peak hours.",
+    "Handled memberships, waivers, and payments with zero cash shortfalls in three years."
+  ],
+
+  "job3_title": "Office Assistant (part-time)",
+  "job3_org": "State University chapter office",
+  "job3_dates": "2018 – 2019",
+  "job3_bullets": [
+    "Kept the student-organization calendar and published a monthly two-page newsletter."
+  ],
+
+  "edu1_degree": "B.A. in Organizational Studies",
+  "edu1_school": "State University",
+  "edu1_dates": "2015 – 2019",
+  "edu2_degree": "Certificate, Nonprofit Management",
+  "edu2_school": "Sampletown Community College",
+  "edu2_dates": "2021",
+
+  "extras_bullets": [
+    "Certified in CPR & First Aid — American Red Cross, 2023",
+    "Weekly story-hour volunteer, Sampletown Public Library"
+  ],
+
+  "letter_role": "Program Coordinator",
+  "letter_company": "Sampletown Community Center",
+  "letter_manager": "Ms. Alvarez",
+  "letter_opening": "I am applying for the Program Coordinator role you posted for Sampletown Community Center. The posting reads like a summary of my last four years: schedules that hold together, volunteers who stay, and records that are ready before anyone asks.",
+  "letter_body": "At the Sampletown Housing Council, I coordinate 40 volunteers a week across three sites and prepare the monthly summary our board uses to make decisions. Before that, I ran a front desk that greeted more than 100 people a day. Three details from that work line up with what your posting asks for:",
+  "letter_bullets": [
+    "A weekly schedule of 40 volunteers across three buildings, kept accurate since 2022.",
+    "A shared intake log that cut application processing time roughly in half.",
+    "Short, plain-English summaries that coworkers and board members actually read."
+  ],
+  "letter_closing": "If any part of this looks like a fit, I would be glad to talk by phone or stop by the Center. My résumé and reference sheet are attached. Thank you for your time.",
+
+  "ref_note": "These references have agreed to speak about my work. A short email first is the easiest way to set up a time.",
+
+  "ref1_name": "Jordan Rivera",
+  "ref1_role": "Program Manager (my direct supervisor)",
+  "ref1_org": "Sampletown Housing Council",
+  "ref1_phone": "(555) 010-8901",
+  "ref1_email": "jordan.rivera@example.org",
+
+  "ref2_name": "Priya Natarajan",
+  "ref2_role": "Member Services Lead",
+  "ref2_org": "Example Family YMCA",
+  "ref2_phone": "(555) 010-2288",
+  "ref2_email": "priya.n@example.org",
+
+  "ref3_name": "Sam Okonkwo",
+  "ref3_role": "Former Professor",
+  "ref3_org": "State University",
+  "ref3_phone": "(555) 010-4311",
+  "ref3_email": "sam.okonkwo@example.edu",
+
+  "map1_from": "Coordinating people, schedules, paperwork",
+  "map1_to": "steady execution on new systems and tools",
+  "map2_from": "Plain-English volunteer guides and notes",
+  "map2_to": "documentation any beginner can follow",
+  "map3_from": "Shared logs and calendars the team relies on",
+  "map3_to": "comfort with data, forms, and new software"
+}

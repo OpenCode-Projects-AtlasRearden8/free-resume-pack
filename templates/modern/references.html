@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Fill-in reference sheet template (modern style). The sample text is fictitious — replace it with your own, then rebuild.">
+  <title>References — {{full_name}}</title>
+  <link rel="stylesheet" href="modern.css">
+</head>
+<body class="refs">
+  <header class="masthead">
+    <h1>{{full_name}}</h1>
+    <p class="contact">
+      <span>{{location}}</span><span>{{phone}}</span><span>{{email}}</span><span>{{website}}</span><span>{{linkedin}}</span>
+    </p>
+  </header>
+
+  <section>
+    <h2>References</h2>
+    <p class="note">{{ref_note}}</p>
+    <table class="ref-table">
+      <thead>
+        <tr>
+          <th class="first">Name</th>
+          <th>Role and organization</th>
+          <th>How to reach</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ref1_name}}</td>
+          <td>{{ref1_role}}, {{ref1_org}}</td>
+          <td>{{ref1_phone}}<br>{{ref1_email}}</td>
+        </tr>
+        <tr>
+          <td>{{ref2_name}}</td>
+          <td>{{ref2_role}}, {{ref2_org}}</td>
+          <td>{{ref2_phone}}<br>{{ref2_email}}</td>
+        </tr>
+        <tr>
+          <td>{{ref3_name}}</td>
+          <td>{{ref3_role}}, {{ref3_org}}</td>
+          <td>{{ref3_phone}}<br>{{ref3_email}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</body>
+</html>
