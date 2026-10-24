@@ -1,6 +1,11 @@
 # Python and test artifacts
-.venv/
-__pycache__/
 *.py[cod]
+*.pyc
+.env
+.env.*
 .pytest_cache/
+.venv/
 Printables/html/
+__pycache__/
+dist/*.tmp
+node_modules/
